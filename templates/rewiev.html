@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Review</title>
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="static/Responsive-Form-Contact-Form-Clean.css">
+    <link rel="stylesheet" href="static/Responsive-Form.css">
+</head>
+
+<body>
+    <h1>REVIEW</h1>
+    <div class="container">
+        <div>
+            <form method="post" action="/review">
+                <div class="form-group mb-3">
+                    <div id="formdiv" style="background: #ceea82;">
+                        <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 24px;margin-top: -16px;background: #ffffa7;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left: 2%;font-family: Roboto, sans-serif;font-size: 24px;font-weight: bold;">Paper ID</p>
+                            </div>
+                            <div class="col-md-10 offset-md-1">
+                                <input class="form-control" type="number" name = 'paper_id' id = 'paper_id'></div>
+                        </div>
+                        <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 24px;background: #ffffa7;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left: 2%;font-family: Roboto, sans-serif;font-size: 24px;font-weight: bold;">Reviewer ID</p>
+                            </div>
+                            <div class="col-md-10 offset-md-1">
+                                <input class="form-control" type="email" name="reviewer_id" id = 'reviewer_id'></div>
+                        </div>
+                        <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 24px;background: #ffffa7;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>MeritScore</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1" style="font-family:Roboto, sans-serif;">
+                                <input class="form-control" type="number" name="meritscore" id = 'meritscore'></div>
+                        </div>
+                        <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 24px;background: #ffffa7;">
+                            <div class="col-md-8 offset-md-1" style="height: 59px;">
+                                <p style="margin-left: 2%;font-family: Roboto, sans-serif;font-size: 24px;font-weight: bold;">OriginalityScore</p>
+                            </div>
+                            <div class="col-md-10 offset-md-1">
+                                <input class="form-control" type="number" name="originality_score" id = 'orginality_score'></div>
+                        </div>
+                        <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 24px;background: #ffffa7;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left: 2%;font-family: Roboto, sans-serif;font-size: 24px;font-weight: bold;">RelevanceScore</p>
+                            </div>
+                            <div class="col-md-10 offset-md-1">
+                                <input class="form-control" type="number" name="RelevanceScore" id="RelevanceScore"></div>
+                        </div>
+                        <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 24px;background: #ffffa7;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left: 2%;font-family: Roboto, sans-serif;font-size: 24px;font-weight: bold;">ReadabilityScore</p>
+                            </div>
+                            <div class="col-md-10 offset-md-1">
+                                <input class="form-control" type="number" name="ReadabalityScore" id = "ReadabilityScore"></div>
+                        </div>
+                        <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 24px;background: #ffffa7;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left: 2%;font-family: Roboto, sans-serif;font-size: 24px;font-weight: bold;">INCOMMENT</p>
+                            </div>
+                            <div class="col-md-10 offset-md-1">
+                                <input class="form-control" type="text" style="height: 143px;" name="INCOMMENT" id = 'INCOMMENT'></div>
+                        </div>
+                        <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 24px;background: #ffffa7;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left: 2%;font-family: Roboto, sans-serif;font-size: 24px;font-weight: bold;">OUTCOMMENT</p>
+                            </div>
+                            <div class="col-md-10 offset-md-1">
+                                <input class="form-control" type="text" style="height: 143px;" name="OUTCOMMENT" id = 'OUTCOMMENT'></div>
+                        </div>
+                        <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 24px;background: #ffffa7;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left: 2%;font-family: Roboto, sans-serif;font-size: 24px;font-weight: bold;">RECOMMENDATION</p>
+                            </div>
+                            <div class="col-md-10 offset-md-1">
+                                <input class="form-control" type="text" style="height: 143px;" name="RECOMMENDATION" id = 'RECOMMENDATION'></div>
+                        </div>
+                        <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 24px;background: #ffffa7;">
+                            <div class="col-12 col-md-4 offset-md-4"><button class="btn btn-light btn-lg" style="font-family: Roboto, sans-serif;transform: translate(23px);" type="reset">Clear </button><button class="btn btn-light btn-lg" style="margin-left:16px;" type="submit">Submit </button></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
